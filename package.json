@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "cssnano": "^5.0.14",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-preset-env": "^7.1.0",
+    "tailwindcss": "^3.0.8"
+  },
+  "scripts": {
+    "clean": "rm -rf _site",
+    "dev-11ty": "npx @11ty/eleventy --serve --watch",
+    "dev-postcss": "postcss --config postcss.config.js src/assets/css/*.css --dir _site/assets/css/ --watch --verbose",
+    "dev": "npm run clean && npm run dev-11ty & npm run dev-postcss"
+  }
+}

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  color: lch(40% 68.8 34.5 / 50%);
+}
