@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/css/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="bg-white shadow-lg fixed top-0 left-0 w-full">
+<nav class="bg-white shadow-lg fixed top-0 left-0 w-full">
   <div class="max-w-6xl mx-auto px-4">
     <div class="flex space-x-7 justify-between">
       <div>
@@ -23,35 +15,55 @@
         <a
           href="/redaction-web" 
           class="nav-link
-          "
+          {% if 'redaction-web' in page.url %}
+          border-b-4
+          border-green-500
+          text-green-500
+          {% endif %}"
         >
           Rédaction Web
         </a>
         <a
           href="/seo" 
           class="nav-link
-          "
+          {% if 'seo' in page.url %}
+          border-b-4
+          border-green-500
+          text-green-500
+          {% endif %}"
         >
           SEO
         </a>
         <a
           href="/creation-de-site" 
           class="nav-link
-          "
+          {% if 'creation-de-site' in page.url %}
+          border-b-4
+          border-green-500
+          text-green-500
+          {% endif %}"
         >
           Création de site
         </a>
         <a
           href="/formation" 
           class="nav-link
-          "
+          {% if 'formation' in page.url %}
+          border-b-4
+          border-green-500
+          text-green-500
+          {% endif %}"
         >
           Formation
         </a>
         <a
           href="/graphisme" 
           class="nav-link
-          "
+          {% if 'graphisme' in page.url %}
+          border-b-4
+          border-green-500
+          text-green-500
+          {% endif %}"
         >
           Graphisme
         </a>
@@ -122,23 +134,4 @@
       hamburgerBot.classList.toggle("open-bot");
     });
   </script>
-</nav> <div class="mt-4 flex flex-wrap h-screen">
-  <div class="order-2 md:order-1 w-full md:w-1/2 h-screen flex flex-col justify-center">
-    <div class="mx-8 md:mx-24">
-      <h1 class="text-4xl md:text-6xl text-center md:text-left font-bold mt-16">Annmof, rédactrice web</h1>
-      <div class="w-full mt-16 text-gray-700 text-sm"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-  </div>
-  <div class="order-1 md:order-2 w-full md:w-1/2 h-3/6 md:h-screen">
-    <img
-      src="./assets/images/logo_annmof.png"
-      class="p-16 w-auto object-scale-down h-screen m-auto"
-      alt=""
-    />
-  </div>
-</div>
-  </body>
-</html>
+</nav>
