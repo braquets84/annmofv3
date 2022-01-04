@@ -444,6 +444,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-auto {
   margin: auto;
 }
+.m-16 {
+  margin: 4rem;
+}
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -463,6 +466,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .block {
   display: block;
@@ -485,6 +494,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-3\/6 {
   height: 50%;
 }
+.h-5\/6 {
+  height: 83.333333%;
+}
+.max-h-screen {
+  max-height: 100vh;
+}
 .w-full {
   width: 100%;
 }
@@ -497,8 +512,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-6 {
   width: 1.5rem;
 }
+.w-3\/6 {
+  width: 50%;
+}
+.w-5\/6 {
+  width: 83.333333%;
+}
+.w-4\/6 {
+  width: 66.666667%;
+}
 .max-w-6xl {
   max-width: 72rem;
+}
+.max-w-md {
+  max-width: 28rem;
+}
+.max-w-screen-sm {
+  max-width: 640px;
+}
+.basis-1\/3 {
+  flex-basis: 33.333333%;
+}
+.basis-2\/5 {
+  flex-basis: 40%;
+}
+.basis-3\/5 {
+  flex-basis: 60%;
 }
 .flex-row-reverse {
   flex-direction: row-reverse;
@@ -509,6 +548,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-wrap {
   flex-wrap: wrap;
 }
+.place-content-center {
+  align-content: center;
+  justify-content: center;
+  place-content: center;
+}
 .items-center {
   align-items: center;
 }
@@ -517,6 +561,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-items-center {
+  justify-items: center;
 }
 .space-x-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -564,6 +611,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.pt-16 {
+  padding-top: 4rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
 }
 .text-center {
   text-align: center;
@@ -672,6 +725,18 @@ format('woff2')}
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-3\/6 {
+    width: 50%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-row {
