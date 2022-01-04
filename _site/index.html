@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <nav class="bg-white shadow-lg fixed top-0 left-0 w-full">
+  <body class="bg-slate-100">
+    <nav id="navbar" class="bg-slate-100 shadow-lg fixed -top-16 left-0 w-full transition-all duration-300">
   <div class="max-w-6xl mx-auto px-4">
     <div class="flex space-x-7 justify-between">
       <div>
@@ -121,21 +127,99 @@
       hamburgerMid.classList.toggle("open-mid");
       hamburgerBot.classList.toggle("open-bot");
     });
+
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      if(currentScrollPos >= 600){
+        document.getElementById("navbar").style.top = "0";
+      }
+      else{
+        document.getElementById("navbar").style.top = "-4rem";
+      }
+    } 
   </script>
-</nav> 
-<div class="flex flex-col md:flex-row items-center m-16">
-  <div class="basis-2/5">
-    <h1 class="text-4xl md:text-6xl text-center md:text-left font-bold mt-16">Annmof, agence web</h1>
-    <div class="w-full mt-16 text-gray-700 text-sm">
+</nav> <div class="m-16 h-screen">
+  <p class="bimbo text-center m-16 text-6xl md:text-8xl">annmof</p>
+  <img
+    src="./assets/images/logo_annmof.png"
+    class="object-scale-down m-auto"
+    alt="logo - machine à écrire avec un arc-en-ciel à la place du papier"
+  />
+</div> 
+<div class="flex flex-col md:flex-row items-center m-0 md:m-16 justify-between">
+  <div class="order-2 md:order-1 m-8 md:max-width-50vw">
+    <h1 class="yatra text-4xl md:text-6xl text-center md:text-left font-bold mt-16"><span class="bimbo">annmof</span>, agence web</h1>
+    <div class="mt-16 text-gray-700 text-base">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
   </div>
-  <div class="basis-3/5 order-1 md:order-2 mb-8 pb-8 w-3/6 m-auto md:w-full">
+  <div class="order-1 md:order-2 m-8">
     <img
-      src="./assets/images/logo_annmof.png"
-      class="pt-16 w-3/6 object-scale-down m-auto"
-      alt=""
+      src="./assets/images/manon.jpg"
+      class="object-scale-down m-auto rounded-full"
+      alt="visage de Manon Fayard qui regarde vers le haut en souriant"
     />
+  </div>
+</div> <div class="flex flex-row flex-wrap justify-center gap-8 m-8">
+  <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+    <div class="flex justify-center md:justify-end -mt-16">
+      <img class="w-20 h-20 object-cover rounded-full border-2 border-green-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+    </div>
+    <div>
+      <h2 class="text-gray-800 text-3xl font-semibold yatra">Rédaction web</h2>
+      <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
+    </div>
+    <div class="flex justify-end mt-4">
+      <a href="/redaction-web" class="text-xl font-medium text-green-500">En savoir plus</a>
+    </div>
+  </div>
+  <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+    <div class="flex justify-center md:justify-end -mt-16">
+      <img class="w-20 h-20 object-cover rounded-full border-2 border-green-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+    </div>
+    <div>
+      <h2 class="text-gray-800 text-3xl font-semibold yatra">SEO</h2>
+      <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
+    </div>
+    <div class="flex justify-end mt-4">
+      <a href="/seo" class="text-xl font-medium text-green-500">En savoir plus</a>
+    </div>
+  </div>
+  <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+    <div class="flex justify-center md:justify-end -mt-16">
+      <img class="w-20 h-20 object-cover rounded-full border-2 border-green-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+    </div>
+    <div>
+      <h2 class="text-gray-800 text-3xl font-semibold yatra">Création de site</h2>
+      <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
+    </div>
+    <div class="flex justify-end mt-4">
+      <a href="/creation-de-site" class="text-xl font-medium text-green-500">En savoir plus</a>
+    </div>
+  </div>
+  <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+    <div class="flex justify-center md:justify-end -mt-16">
+      <img class="w-20 h-20 object-cover rounded-full border-2 border-green-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+    </div>
+    <div>
+      <h2 class="text-gray-800 text-3xl font-semibold yatra">Formation</h2>
+      <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
+    </div>
+    <div class="flex justify-end mt-4">
+      <a href="/formation" class="text-xl font-medium text-green-500">En savoir plus</a>
+    </div>
+  </div>
+  <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+    <div class="flex justify-center md:justify-end -mt-16">
+      <img class="w-20 h-20 object-cover rounded-full border-2 border-green-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+    </div>
+    <div>
+      <h2 class="text-gray-800 text-3xl font-semibold yatra">Graphisme</h2>
+      <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
+    </div>
+    <div class="flex justify-end mt-4">
+      <a href="/graphisme" class="text-xl font-medium text-green-500">En savoir plus</a>
+    </div>
   </div>
 </div>
   </body>

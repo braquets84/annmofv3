@@ -1,4 +1,4 @@
-<nav class="bg-white shadow-lg fixed top-0 left-0 w-full">
+<nav id="navbar" class="bg-slate-100 shadow-lg fixed -top-16 left-0 w-full transition-all duration-300">
   <div class="max-w-6xl mx-auto px-4">
     <div class="flex space-x-7 justify-between">
       <div>
@@ -133,5 +133,15 @@
       hamburgerMid.classList.toggle("open-mid");
       hamburgerBot.classList.toggle("open-bot");
     });
+
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      if(currentScrollPos >= 600){
+        document.getElementById("navbar").style.top = "0";
+      }
+      else{
+        document.getElementById("navbar").style.top = "-4rem";
+      }
+    } 
   </script>
 </nav>
