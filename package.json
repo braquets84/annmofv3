@@ -17,6 +17,6 @@
     "build-postcss": "postcss --config postcss.config.js src/assets/css/*.css --dir _site/assets/css/ --verbose",
     "build-11ty": "npx @11ty/eleventy",
     "dev": "npm run clean && npm run dev-11ty & npm run dev-postcss",
-    "build": "npm run clean && npm run build-11ty & npm run build-postcss"
+    "build": "npm run clean & npm run build-11ty & npm run build-postcss"
   }
 }
