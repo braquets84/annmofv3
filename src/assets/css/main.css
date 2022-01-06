@@ -6,12 +6,12 @@
   font-family: 'Bimbo', cursive;
 }
 
-.yatra{
-  font-family: 'Yatra One', cursive;
+.fraunces{
+  font-family: 'Fraunces', serif;
 }
 
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Commissioner', sans-serif;
 }
 
 @layer components{
@@ -41,4 +41,32 @@
 
 .open-mid{
   transform: scale(0);
+}
+
+.highlight-green {
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(110, 231, 183, 0.1),
+    rgba(110, 231, 183, 0.7) 4%,
+    rgba(110, 231, 183, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.highlight-pink {
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 110, 158, 0.1),
+    rgba(231, 110, 158, 0.7) 4%,
+    rgba(231, 110, 158, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
