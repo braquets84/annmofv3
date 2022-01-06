@@ -13,7 +13,7 @@
     />
   </head>
   <body class="bg-stone-100">
-    <nav id="navbar" class="bg-stone-100 shadow-lg fixed -top-16 left-0 w-full transition-all duration-300">
+    <nav role="navigation" aria-label="Menu principal" id="navbar" class="bg-stone-100 shadow-lg fixed -top-16 left-0 w-full transition-all duration-300">
   <div class="max-w-6xl mx-auto px-4">
     <div class="flex space-x-7 justify-between">
       <div>
@@ -64,10 +64,13 @@
         </a>
       </div>
       <div class="md:hidden flex items-center">
-        <button class="outline-none mobile-menu-button">
-          <span id="hamb-top" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-700 rounded"></span>
-          <span id="hamb-mid" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-700 rounded"></span>
-          <span id="hamb-bot" class="transition duration-300 w-6 block h-1 bg-gray-700 rounded"></span>
+        <button aria-expanded="false" class="outline-none mobile-menu-button text-sm text-center">
+          <div class="mb-1 flex flex-col items-center">
+            <span id="hamb-top" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-700 rounded"></span>
+            <span id="hamb-mid" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-700 rounded"></span>
+            <span id="hamb-bot" class="transition duration-300 w-6 block h-1 bg-gray-700 rounded"></span>
+          </div>
+          menu
         </button>
       </div>
     </div>
@@ -123,7 +126,15 @@
     const hamburgerBot = document.getElementById("hamb-bot");
 
     btn.addEventListener("click", () => {
+      let x = btn.getAttribute("aria-expanded");
       menu.classList.toggle("hidden");
+      if(x == "false"){
+        x = "true";
+      }
+      else{
+        x = "false";
+      }
+      btn.setAttribute("aria-expanded",x);
       hamburgerTop.classList.toggle("open-top");
       hamburgerMid.classList.toggle("open-mid");
       hamburgerBot.classList.toggle("open-bot");
