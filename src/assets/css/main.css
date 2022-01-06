@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {   
-  font-family: "Bimbo";   
-  src: url(/assets/fonts/Bimbo.woff2) format('woff2')
-}
-
 .bimbo{
   font-family: 'Bimbo', cursive;
 }
