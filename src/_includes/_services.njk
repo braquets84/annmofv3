@@ -9,7 +9,7 @@
         <p class="mt-2 text-gray-600">{{ item.texte }}</p>
       </div>
       <div class="flex justify-end mt-4">
-        <a href="/redaction-web" class="text-xl font-medium text-pink-600">{{ item.cta }}</a>
+        <a href={{ item.link }} class="text-xl font-medium text-pink-600">{{ item.cta }}</a>
       </div>
     </div>
   {% endfor %}
