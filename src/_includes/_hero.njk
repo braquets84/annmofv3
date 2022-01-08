@@ -3,13 +3,13 @@
   <div class="order-2 md:order-1 m-8 md:max-width-50vw">
     <h1 class="fraunces highlight-green text-4xl md:text-6xl text-center md:text-left font-bold mt-16"><span class="bimbo">annmof,</span> agence web</h1>
     <div class="mt-16 text-gray-700 text-base">
-      {{ hero }}
+      {{ hero | safe }}
     </div>
   </div>
   <div class="order-1 md:order-2 m-8">
     <img
       src="./assets/images/manon.webp"
-      class="object-scale-down m-auto rounded-full"
+      class="object-scale-down m-auto rounded-full border-8 border-green-200"
       alt="visage de Manon Fayard qui regarde vers le haut en souriant"
       width=265px
       height=265px
