@@ -2,31 +2,36 @@
   {
     "title": "Rédaction web",
     "imgurl": "assets/images/logo_annmof-cropped.webp",
-    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
-    "cta": "Découvrir la rédaction web"
+    "texte": "Pour vos sites vitrines, vos e-commerces, vos blogs, vos réseaux sociaux et vos campagnes d’emailing, je rédige des contenus percutants et optimisés respectant votre ligne éditoriale. Entrez dans l’ère de l’inbound marketing pour attirer et convaincre les clients qui vous ressemblent.",
+    "cta": "Découvrir la rédaction web",
+    "link": "/redaction-web"
   },
   {
     "title": "SEO",
     "imgurl": "assets/images/logo_annmof-cropped.webp",
-    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
-    "cta": "Découvrir le SEO"
+    "texte": "Étudions vos opportunités en référencement naturel pour développer la visibilité, la notoriété et l’indice de confiance de votre entreprise sur les moteurs de recherche. Une stratégie forte pour attirer un plus grand trafic organique sur votre site.",
+    "cta": "Découvrir le SEO",
+    "link": "/seo"
   },
   {
     "title": "Création de site web",
     "imgurl": "assets/images/logo_annmof-cropped.webp",
     "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
-    "cta": "Découvrir nos offres \"Création de site web\""
+    "cta": "Découvrir nos offres \"Webdesign\"",
+    "link": "/webdesign"
   },
   {
     "title": "Formation",
     "imgurl": "assets/images/logo_annmof-cropped.webp",
-    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
-    "cta": "Se former"
+    "texte": "Investir sur soi et se former plutôt que sous-traiter : mes coachings individuels s'adressent aux entrepreneurs indépendants de tout horizon (photographe, coiffeur, créateur de site web…) et la Masterclass, aux profs en reconversion professionnelle dans la rédaction web.",
+    "cta": "Se former",
+    "link": "/formation"
   },
   {
     "title": "Graphisme",
     "imgurl": "assets/images/logo_annmof-cropped.webp",
     "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
-    "cta": "Découvrir nos offres \"Graphisme\""
+    "cta": "Découvrir nos offres \"Graphisme\"",
+    "link": "/graphisme"
   }
 ]
