@@ -4,7 +4,7 @@
       <div>
         <a href="/" class="flex items-center py-4 px-2">
           <img
-            src="assets/images/logo_annmof-cropped.webp"
+            src="../assets/images/logo_annmof-cropped.webp"
             alt="Logo"
             class="h-8 w-8 mr-2"
             width=32px
@@ -146,19 +146,22 @@
       hamburgerMid.classList.toggle("open-mid");
       hamburgerBot.classList.toggle("open-bot");
     });
-
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-      if(currentScrollPos >= 600){
-        document.getElementById("navbar").style.top = "0";
+    {% if page.url == "/"%}
+      window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if(currentScrollPos >= 600){
+          document.getElementById("navbar").style.top = "0";
+        }
+        else{
+          document.getElementById("navbar").style.top = "-4rem";
+          menu.classList.add("hidden");
+          hamburgerTop.classList.remove("open-top");
+          hamburgerMid.classList.remove("open-mid");
+          hamburgerBot.classList.remove("open-bot");
+        }
       }
-      else{
-        document.getElementById("navbar").style.top = "-4rem";
-        menu.classList.add("hidden");
-        hamburgerTop.classList.remove("open-top");
-        hamburgerMid.classList.remove("open-mid");
-        hamburgerBot.classList.remove("open-bot");
-      }
-    } 
+    {% else %}
+      document.getElementById("navbar").style.top = "0";
+    {% endif %}
   </script>
 </nav>
