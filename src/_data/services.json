@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Rédaction web",
+    "imgurl": "assets/images/logo_annmof-cropped.webp",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
+    "cta": "Découvrir la rédaction web"
+  },
+  {
+    "title": "SEO",
+    "imgurl": "assets/images/logo_annmof-cropped.webp",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
+    "cta": "Découvrir le SEO"
+  },
+  {
+    "title": "Création de site web",
+    "imgurl": "assets/images/logo_annmof-cropped.webp",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
+    "cta": "Découvrir nos offres \"Création de site web\""
+  },
+  {
+    "title": "Formation",
+    "imgurl": "assets/images/logo_annmof-cropped.webp",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
+    "cta": "Se former"
+  },
+  {
+    "title": "Graphisme",
+    "imgurl": "assets/images/logo_annmof-cropped.webp",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
+    "cta": "Découvrir nos offres \"Graphisme\""
+  }
+]

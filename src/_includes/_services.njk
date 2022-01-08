@@ -1,0 +1,16 @@
+<div class="flex flex-row flex-wrap justify-center gap-8 m-8">
+  {% for item in services %}
+    <div class="service-card">
+      <div class="service-img-container">
+        <img class="service-img" src={{ item.imgurl }} alt="" width=80px height=80px>
+      </div>
+      <div>
+        <h2 class="service-h2 highlight-pink fraunces">{{ item.title }}</h2>
+        <p class="mt-2 text-gray-600">{{ item.texte }}</p>
+      </div>
+      <div class="flex justify-end mt-4">
+        <a href="/redaction-web" class="text-xl font-medium text-green-700">{{ item.cta }}</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
