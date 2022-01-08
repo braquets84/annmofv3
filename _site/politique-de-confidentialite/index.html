@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales</title>
+  <meta name="description" content="mentions légales du site www.annmof.fr">
+  <link href="../assets/css/main.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Fraunces:wght@600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Fraunces:wght@600&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Fraunces:wght@600&display=swap" />
+  </noscript>
+  <style>
+    @font-face {   
+      font-family: "Bimbo";   
+      src: url(/assets/fonts/Bimbo.woff2) format('woff2');
+      font-display:swap;
+    }
+  </style>
+</head>
+<body class="bg-stone-100">
+  <nav role="navigation" aria-label="Menu principal" id="navbar" class="bg-stone-100 shadow-lg fixed -top-16 left-0 w-full transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex space-x-7 justify-between">
+      <div>
+        <a href="/" class="flex items-center py-4 px-2">
+          <img
+            src="../assets/images/logo_annmof-cropped.webp"
+            alt="Logo"
+            class="h-8 w-8 mr-2"
+            width=32px
+            height=32px
+          />
+          <span class="font-semibold text-gray-900 text-lg bimbo">Annmof</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-1">
+        <a
+          href="/redaction-web" 
+          class="nav-link
+          "
+        >
+          Rédaction Web
+        </a>
+        <a
+          href="/seo" 
+          class="nav-link
+          "
+        >
+          SEO
+        </a>
+        <a
+          href="/creation-de-site" 
+          class="nav-link
+          "
+        >
+          Création de site
+        </a>
+        <a
+          href="/formation" 
+          class="nav-link
+          "
+        >
+          Formation
+        </a>
+        <a
+          href="/graphisme" 
+          class="nav-link
+          "
+        >
+          Graphisme
+        </a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button aria-expanded="false" class="outline-none mobile-menu-button text-sm text-center">
+          <div class="mb-1 flex flex-col items-center">
+            <span id="hamb-top" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-700 rounded"></span>
+            <span id="hamb-mid" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-700 rounded"></span>
+            <span id="hamb-bot" class="transition duration-300 w-6 block h-1 bg-gray-700 rounded"></span>
+          </div>
+          menu
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hidden mobile-menu">
+    <ul>
+      <li>
+        <a
+          href="/redaction-web"
+          class="menu-item"
+          >Rédaction Web</a
+        >
+      </li>
+      <li>
+        <a
+          href="/seo"
+          class="menu-item"
+        >
+          SEO
+        </a>
+      </li>
+      <li>
+        <a
+          href="/creation-de-site"
+          class="menu-item"
+        >
+          Création de site
+        </a>
+      </li>
+      <li>
+        <a
+          href="/formation"
+          class="menu-item"
+        >
+          Formation
+        </a>
+      </li>
+      <li>
+        <a
+          href="/graphisme"
+          class="menu-item"
+        >
+          Graphisme
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+    const hamburgerTop = document.getElementById("hamb-top");
+    const hamburgerMid = document.getElementById("hamb-mid");
+    const hamburgerBot = document.getElementById("hamb-bot");
+
+    btn.addEventListener("click", () => {
+      let x = btn.getAttribute("aria-expanded");
+      menu.classList.toggle("hidden");
+      if(x == "false"){
+        x = "true";
+      }
+      else{
+        x = "false";
+      }
+      btn.setAttribute("aria-expanded",x);
+      hamburgerTop.classList.toggle("open-top");
+      hamburgerMid.classList.toggle("open-mid");
+      hamburgerBot.classList.toggle("open-bot");
+    });
+    
+      document.getElementById("navbar").style.top = "0";
+    
+  </script>
+</nav>
+  <main>
+    <div class="text-gray-700 container p-16 mt-32">
+      <h1 class="fraunces highlight-green text-4xl md:text-6xl text-center md:text-left font-bold mt-16">Politique de confidentialité</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </main>
+</body>
+</html>
