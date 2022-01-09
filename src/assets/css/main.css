@@ -63,6 +63,17 @@
   }
 }
 
+.nav-link:hover, .menu-item:hover{
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(134, 239, 172, 1),
+    rgba(134, 239, 172, 0.3)
+  );
+  box-decoration-break: clone;
+  padding: 0.5rem;
+}
+
 .open-top{
   transform-origin: bottom;
   transform: rotate(45deg) translateY(10px);
