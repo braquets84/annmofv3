@@ -2,21 +2,37 @@
   <div class="container mx-auto px-6">
     <div class="sm:flex sm:mt-8">
       <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
-        <div class="flex flex-col">
-          <span class="my-2"><a href="/politique-de-confidentialite" class="text-gray-700  text-md hover:text-gray-500">Politique de confidentialité</a></span>
-          <span class="my-2"><a href="/mentions-legales" class="text-gray-700  text-md hover:text-gray-500">Mentions légales</a></span>
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col">
+            <span class="my-2"><a href="/politique-de-confidentialite" class="text-gray-700  text-md hover:text-gray-500">Politique de confidentialité</a></span>
+            <span class="my-2"><a href="/mentions-legales" class="text-gray-700  text-md hover:text-gray-500">Mentions légales</a></span>
+          </div>
+          <span class="my-2"><a href="mailto:contact@annmof.fr" class="text-gray-700  text-md hover:text-gray-500">contact@annmof.fr</a></span>
         </div>
         <div class="flex flex-col">
           <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Services</span>
-          <span class="my-2"><a href="/redaction-web" class="text-gray-700 text-md hover:text-gray-500">link 1</a></span>
-          <span class="my-2"><a href="#" class="text-gray-700  text-md hover:text-gray-500">link 1</a></span>
-          <span class="my-2"><a href="#" class="text-gray-700 text-md hover:text-gray-500">link 1</a></span>
+          <ul class="flex flex-col">
+            {% for item in services %}
+              <li class="my-2">
+                <a href="{{ item.link }}" class="text-gray-700 text-md hover:text-gray-500">
+                  {{ item.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
         <div class="flex flex-col">
-          <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Footer header 3</span>
-          <span class="my-2"><a href="#" class="text-gray-700  text-md hover:text-gray-500">link 1</a></span>
-          <span class="my-2"><a href="#" class="text-gray-700  text-md hover:text-gray-500">link 1</a></span>
-          <span class="my-2"><a href="#" class="text-gray-700  text-md hover:text-gray-500">link 1</a></span>
+          <span class="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">Réseaux sociaux</span>
+          <ul class="flex flex-col">
+            {% for item in socialMedia %}
+              <li class="my-2">
+                <a href="{{ item.link }}" class="text-gray-700 text-md hover:text-gray-500">
+                  {{ item.title }}
+                  <img class="inline ml-4" src={{ item.icon }} alt="{{ item.title }} logo" width="16" height="16">
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

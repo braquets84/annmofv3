@@ -13,63 +13,15 @@
           <span class="font-semibold text-gray-900 text-lg bimbo">Annmof</span>
         </a>
       </div>
-      <div class="hidden md:flex items-center space-x-1">
-        <a
-          href="/redaction-web" 
-          class="nav-link
-          {% if 'redaction-web' in page.url %}
-          border-b-4
-          border-green-700
-          text-green-700
-          {% endif %}"
-        >
-          Rédaction Web
-        </a>
-        <a
-          href="/seo" 
-          class="nav-link
-          {% if 'seo' in page.url %}
-          border-b-4
-          border-green-700
-          text-green-700
-          {% endif %}"
-        >
-          SEO
-        </a>
-        <a
-          href="/creation-de-site" 
-          class="nav-link
-          {% if 'creation-de-site' in page.url %}
-          border-b-4
-          border-green-700
-          text-green-700
-          {% endif %}"
-        >
-          Création de site
-        </a>
-        <a
-          href="/formation" 
-          class="nav-link
-          {% if 'formation' in page.url %}
-          border-b-4
-          border-green-700
-          text-green-700
-          {% endif %}"
-        >
-          Formation
-        </a>
-        <a
-          href="/graphisme" 
-          class="nav-link
-          {% if 'graphisme' in page.url %}
-          border-b-4
-          border-green-700
-          text-green-700
-          {% endif %}"
-        >
-          Graphisme
-        </a>
-      </div>
+      <ul class="hidden md:flex items-center space-x-1">
+        {% for item in services %}
+          <li>
+            <a href="{{ item.link }}" class="nav-link" {% if item.link in page.url %} aria-current="page"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
       <div class="md:hidden flex items-center">
         <button aria-expanded="false" class="outline-none mobile-menu-button text-sm text-center">
           <div class="mb-1 flex flex-col items-center">
@@ -84,45 +36,13 @@
   </div>
   <div class="hidden mobile-menu">
     <ul>
-      <li>
-        <a
-          href="/redaction-web"
-          class="menu-item"
-          >Rédaction Web</a
-        >
-      </li>
-      <li>
-        <a
-          href="/seo"
-          class="menu-item"
-        >
-          SEO
-        </a>
-      </li>
-      <li>
-        <a
-          href="/creation-de-site"
-          class="menu-item"
-        >
-          Création de site
-        </a>
-      </li>
-      <li>
-        <a
-          href="/formation"
-          class="menu-item"
-        >
-          Formation
-        </a>
-      </li>
-      <li>
-        <a
-          href="/graphisme"
-          class="menu-item"
-        >
-          Graphisme
-        </a>
-      </li>
+      {% for item in services %}
+        <li>
+          <a href="{{ item.link }}" class="menu-item" {% if item.link in page.url %} aria-current="page"{% endif %}>
+            {{ item.title }}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
   <script>
