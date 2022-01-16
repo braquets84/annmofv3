@@ -1,53 +1,103 @@
-<div class="my-10 md:my-24 container mx-auto flex flex-col justify-between md:flex-row overflow-hidden">
+<div class="my-10 md:my-24 h-screen md:h-36rem container mx-auto flex flex-col justify-center md:flex-row overflow-hidden">
   <div class="w-full py-2 md:py-24 bg-gradient-to-r from-green-300 to-green-100 md:w-1/2 flex flex-col item-center justify-center rounded-lg">   
     <h2 class="fraunces text-2xl md:text-5xl py-2 px-8 md:py-6 text-gray-900 font-semibold mb-0 text-center mx-auto ">Témoignages de clients</h2>
   </div>
-  <div class="bg-stone-100 md:w-1/2 flex flex-row justify-center items-center mx-8">
-    {# <button class="inline-flex items-center justify-center w-10 h-10 mr-2 text-indigo-100 transition-colors duration-150 bg-pink-300 rounded-full focus:shadow-outline hover:bg-indigo-800">
-      &#8592;
-    </button> #}
-    <div class="flex flex-col h-full">
+  <div class="flex flex-col justify-between">
+    <div class="flex flex-col justify-center w-full md:w-4/5">
       <div class="top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
         <svg xmlns="http://www.w3.org/2000/svg" class="text-pink-300 fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24"><path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/></svg>
       </div>
-      <div class="h-full">
-        <div class="hidden">
-          <p class="text-gray-900 italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+      <div>
+        <div id="avis1" class="hidden">
+          <p class="text-gray-900 italic px-6 py-6 md:px-16 md:py-4 text-xl md:text-xl">
             Très bel échange professionnel avec Manon. Travail de qualité concernant le référencement de notre site internet oliveprod.fr. Une implication réelle et une très bonne adaptabilité tant sur le fond que sur la forme concernant notre demande.
           </p>
         </div>
-        
-        <div class="hidden">
-          <p class="text-gray-900 italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+        <div id="avis2" class="hidden">
+          <p class="text-gray-900 italic px-6 py-6 md:px-16 md:py-4 text-xl md:text-xl">
             J'ai travaillé avec Manon sur un seul article, mais j'ai vraiment beaucoup apprécié travailler avec elle. Le contenu proposé est d'excellente qualité.
           </p>
         </div>
-        
-        <div> 
-          <p class="text-gray-900 italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+        <div id="avis3"> 
+          <p class="text-gray-900 italic px-6 py-6 md:px-16 md:py-4 text-xl md:text-xl">
             J'ai rencontré Manon sur Facebook. Après avoir discuter avec elle , j'ai découverte une personne non seulement professionnelle , mais aussi une personne de confiance, humble à l'écoute et humaine. Je lui ai confié la rédac de mon site de e-commerce  sans hésiter. Merci pour tout :)
           </p>
         </div>
-      </div>          
-      <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
-        <div class="text-center hidden">
-          <h2 class="text-sm md:text-base font-bold text-gray-900 leading-tight">Carole Publi</h2>
-          <small class="text-gray-900 text-xs md:text-sm truncate">Bati Métal</small>
-        </div>
-
-        <div class="text-center hidden">
-          <h2 class="text-sm md:text-base font-bold text-gray-900 leading-tight">Michaël Maarek</h2>
-          <small class="text-gray-900 text-xs md:text-sm truncate">Maarek inc.</small>
-        </div>
-
-        <div class="text-center">
-          <h2 class="text-sm md:text-base font-bold text-gray-900 leading-tight">B. Massoda</h2>
-          <small class="text-gray-900 text-xs md:text-sm truncate">Massoda corp.</small>
-        </div>	 
       </div>
     </div>
-    {# <button class="text-2xl text-gray-900 focus:outline-none hover:text-white font-bold w-12 h-10">
-      &#8594;
-    </button> #}
+    <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
+      <div id="nomAvis1" class="text-center hidden">
+        <p class="text-sm md:text-base font-bold text-gray-900 leading-tight">Carole Publi</p>
+        <small class="text-gray-900 text-xs md:text-sm truncate">Bati Métal</small>
+      </div>
+      <div id="nomAvis2" class="text-center hidden">
+        <p class="text-sm md:text-base font-bold text-gray-900 leading-tight">Michaël Maarek</p>
+        <small class="text-gray-900 text-xs md:text-sm truncate">Maarek inc.</small>
+      </div>
+      <div id="nomAvis3" class="text-center">
+        <p class="text-sm md:text-base font-bold text-gray-900 leading-tight">B. Massoda</p>
+        <small class="text-gray-900 text-xs md:text-sm truncate">Massoda corp.</small>
+      </div>	 
+    </div>
+    <div class="text-center">
+      <button id="testimonial1" class="mx-2 rounded-full border border-black h-2 w-2 bg-stone-100"></button>
+      <button id="testimonial2" class="mx-2 rounded-full border border-black h-2 w-2 bg-stone-100"></button>
+      <button id="testimonial3" class="mx-2 rounded-full border border-black h-2 w-2 bg-gray-900"></button>
+    </div>
   </div>
 </div>
+<script>
+  const testimonialButton1 = document.getElementById('testimonial1');
+  const testimonialButton2 = document.getElementById('testimonial2');
+  const testimonialButton3 = document.getElementById('testimonial3');
+
+  const testimonialAvis1 = document.getElementById('avis1');
+  const testimonialAvis2 = document.getElementById('avis2');
+  const testimonialAvis3 = document.getElementById('avis3');
+
+  const testimonialNomAvis1 = document.getElementById('nomAvis1');
+  const testimonialNomAvis2 = document.getElementById('nomAvis2');
+  const testimonialNomAvis3 = document.getElementById('nomAvis3');
+
+  testimonial1.addEventListener('click',()=>{
+    testimonial2.classList.remove('bg-gray-900');
+    testimonial3.classList.remove('bg-gray-900');
+    testimonial2.classList.add('bg-stone-100');
+    testimonial3.classList.add('bg-stone-100');
+    testimonial1.classList.add('bg-gray-900');
+    testimonialAvis1.classList.remove('hidden');
+    testimonialAvis2.classList.add('hidden');
+    testimonialAvis3.classList.add('hidden');
+    testimonialNomAvis1.classList.remove('hidden');
+    testimonialNomAvis2.classList.add('hidden');
+    testimonialNomAvis3.classList.add('hidden');
+  })
+
+  testimonial2.addEventListener('click',()=>{
+    testimonial1.classList.remove('bg-gray-900');
+    testimonial3.classList.remove('bg-gray-900');
+    testimonial1.classList.add('bg-stone-100');
+    testimonial3.classList.add('bg-stone-100');
+    testimonial2.classList.add('bg-gray-900');
+    testimonialAvis2.classList.remove('hidden');
+    testimonialAvis1.classList.add('hidden');
+    testimonialAvis3.classList.add('hidden');
+    testimonialNomAvis2.classList.remove('hidden');
+    testimonialNomAvis1.classList.add('hidden');
+    testimonialNomAvis3.classList.add('hidden');
+  })
+
+  testimonial3.addEventListener('click',()=>{
+    testimonial2.classList.remove('bg-gray-900');
+    testimonial1.classList.remove('bg-gray-900');
+    testimonial2.classList.add('bg-stone-100');
+    testimonial1.classList.add('bg-stone-100');
+    testimonial3.classList.add('bg-gray-900');
+    testimonialAvis3.classList.remove('hidden');
+    testimonialAvis2.classList.add('hidden');
+    testimonialAvis1.classList.add('hidden');
+    testimonialNomAvis3.classList.remove('hidden');
+    testimonialNomAvis2.classList.add('hidden');
+    testimonialNomAvis1.classList.add('hidden');
+  })
+</script>

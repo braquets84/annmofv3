@@ -49,6 +49,11 @@
   .max-height-100vh{
     max-height: 100vh;
   }
+
+  .h-36rem{
+    height:36rem;
+  }
+
   .service-img-container{
     @apply flex justify-center md:justify-end -mt-16;
   }
