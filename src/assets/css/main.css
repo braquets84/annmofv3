@@ -55,7 +55,7 @@
   }
 
   .service-img-container{
-    @apply flex justify-center md:justify-end -mt-16;
+    @apply flex justify-center md:justify-end -mt-8;
   }
   .service-img{
     @apply w-20 h-20 object-cover rounded-full border-4 border-pink-200;
