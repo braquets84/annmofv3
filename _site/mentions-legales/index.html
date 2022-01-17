@@ -135,7 +135,14 @@
   </div>
   <script>
     function enableDarkMode(){
-      document.body.classList.toggle("dark");
+      if(localStorage.theme === "dark"){
+        localStorage.theme = "light";
+        document.body.classList.remove("dark");
+      }
+      else {
+        localStorage.theme = "dark";
+        document.body.classList.add("dark");
+      }
     }
     const btn = document.querySelector("button.mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
@@ -187,4 +194,11 @@
       </main>
     </div>
   </body>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  </script>
 </html>
