@@ -38,10 +38,10 @@
 
 @layer components{
   .nav-link{
-    @apply py-2 px-2 font-semibold text-gray-800 transition duration-300;
+    @apply py-2 px-2 font-semibold text-gray-800 dark:text-stone-100 transition duration-300;
   }
   .menu-item{
-    @apply block text-lg px-2 py-4 transition duration-300;
+    @apply block text-lg px-2 py-4 text-gray-800 dark:text-stone-100 transition duration-300;
   }
   .max-width-50vw{
     max-width: 50vw;
@@ -76,7 +76,7 @@
     rgba(134, 239, 172, 0.3)
   );
   box-decoration-break: clone;
-  padding: 0.5rem;
+  color:rgb(31 41 55);
 }
 
 .open-top{
@@ -101,5 +101,5 @@ a[aria-current="page"]{
     rgba(134, 239, 172, 0.3)
   );
   box-decoration-break: clone;
-  padding: 0.5rem;
+  color:rgb(31 41 55);
 }
