@@ -24,9 +24,9 @@
   <body class="dark">
     <div class="-mt-8 bg-stone-100 dark:bg-gray-800">
       <nav role="navigation" aria-label="Menu principal" id="navbar" class="bg-stone-100 dark:bg-gray-900 shadow-lg fixed -top-16 left-0 w-full transition-all duration-300">
-  <div class="max-w-6xl mx-auto px-4">
+  <div class="mx-8 px-4">
     <div class="flex space-x-7 justify-between">
-      <div>
+      <div class="mr-8">
         <a href="/" class="flex items-center py-4 px-2">
           <img
             src="../assets/images/logo_annmof-cropped.webp"
@@ -35,11 +35,11 @@
             width=32px
             height=32px
           />
-          <div class="hidden dark:block dark:absolute top-2 left-4 -z-10 h-12 w-12 bg-stone-100 rounded-full"></div>
+          <div class="hidden dark:block dark:absolute top-2 left-12 -z-10 h-12 w-12 bg-stone-100 rounded-full"></div>
           <span class="font-semibold text-gray-900 dark:text-stone-100 ml-2 text-lg bimbo">Annmof</span>
         </a>
       </div>
-      <ul class="hidden md:flex items-center space-x-1">
+      <ul class="hidden lg:flex items-center">
         
           <li>
             <a href="/redaction-web" class="nav-link" >
@@ -72,27 +72,29 @@
           </li>
         
       </ul>
-      <div class="flex items-center justify-center pl-8 w-1/2">
-        <label for="darkModeToggle" class="flex items-center cursor-pointer">
-          <div class="relative">
-            <input type="checkbox" id="darkModeToggle" checked class="sr-only" onclick="enableDarkMode()">
-            <div class="switch block bg-stone-200 dark:bg-gray-700 w-10 h-6 rounded-full"></div>
-            <div class="dot dark:translate-x-full absolute left-1 top-1 bg-white dark:bg-green-300 w-4 h-4 rounded-full transition"></div>
-          </div>
-          <div class="ml-3 text-gray-900 dark:text-stone-100 text-xs text-center">
-            mode sombre
-          </div>
-        </label>
-      </div>
-      <div class="md:hidden flex items-center">
-        <button aria-expanded="false" class="outline-none mobile-menu-button text-sm text-gray-900 dark:text-stone-100 text-center">
-          <div class="mb-1 flex flex-col items-center">
-            <span id="hamb-top" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-900 dark:bg-stone-100 rounded"></span>
-            <span id="hamb-mid" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-900 dark:bg-stone-100 rounded"></span>
-            <span id="hamb-bot" class="transition duration-300 w-6 block h-1 bg-gray-900 dark:bg-stone-100 rounded"></span>
-          </div>
-          menu
-        </button>
+      <div class="flex flex-row gap-8">
+        <div class="flex items-center pl-8">
+          <label for="darkModeToggle" class="flex items-center cursor-pointer">
+            <div class="relative">
+              <input type="checkbox" id="darkModeToggle" checked class="sr-only" onclick="enableDarkMode()">
+              <div class="switch block bg-stone-200 dark:bg-gray-700 w-10 h-6 rounded-full"></div>
+              <div class="dot dark:translate-x-full absolute left-1 top-1 bg-white dark:bg-green-300 w-4 h-4 rounded-full transition"></div>
+            </div>
+            <div class="ml-3 text-gray-900 dark:text-stone-100 text-xs text-center">
+              mode sombre
+            </div>
+          </label>
+        </div>
+        <div class="lg:hidden flex items-center">
+          <button aria-expanded="false" class="outline-none mobile-menu-button text-sm text-gray-900 dark:text-stone-100 text-center">
+            <div class="mb-1 flex flex-col items-center">
+              <span id="hamb-top" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-900 dark:bg-stone-100 rounded"></span>
+              <span id="hamb-mid" class="transition duration-300 mb-1 w-6 block h-1 bg-gray-900 dark:bg-stone-100 rounded"></span>
+              <span id="hamb-bot" class="transition duration-300 w-6 block h-1 bg-gray-900 dark:bg-stone-100 rounded"></span>
+            </div>
+            menu
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -373,7 +375,7 @@
   })
 </script>
 
-<form class="bg-white dark:bg-gray-800 mx-auto m-8 p-8 rounded-lg shadow-lg max-w-xl" name="contact" netlify>
+<form class="bg-white dark:bg-gray-700 mx-auto m-8 p-8 rounded-lg shadow-lg max-w-xl" name="contact" netlify>
   <h2 class="highlight-green mb-16 text-center text-3xl fraunces">Formulaire de contact</h2>
   <div class="flex flex-wrap -mx-3 mb-6">
     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
