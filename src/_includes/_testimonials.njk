@@ -22,9 +22,9 @@
       {% endfor %}
     </div>
     <div class="text-center">
-      <button onclick="chooseTestimony(1)" class="testimonial-button testimonial-button-inactive"></button>
-      <button onclick="chooseTestimony(2)" class="testimonial-button testimonial-button-inactive"></button>
-      <button onclick="chooseTestimony(3)" class="testimonial-button testimonial-button-inactive"></button>
+    {% for item in testimonial %}
+      <button onclick="chooseTestimony({{ loop.index }})" class="testimonial-button testimonial-button-inactive"></button>
+    {% endfor %}
     </div>
   </div>
 </div>
