@@ -4,6 +4,7 @@ description: on ne sait pas non plus
 layout: base.njk
 hero: Lorem ipsum
 buttonName: envoyer
+formName: Formulaire de contact
 firstName: Prénom
 lastName: Nom
 email: '* e-mail'
@@ -27,6 +28,7 @@ _inputs:
   lastName:
     label: texte pour le nom
   email:
+    type: text
     label: texte pour l'email
   emailLabel:
     hidden: true
@@ -35,6 +37,7 @@ _inputs:
   messageLabel:
     hidden: true
   rgpd:
+    type: html
     label: texte pour la case à cocher
 ---
 {% include '_logo.njk' %}
