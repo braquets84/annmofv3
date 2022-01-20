@@ -2,6 +2,18 @@
 title: on sait pas encore
 description: on ne sait pas non plus
 layout: base.njk
+hero: Lorem ipsum
+_inputs:
+  layout:
+    hidden: true
+  description:
+    label: La méta description de la page
+    comment: "<meta name="description" content="XXX">"
+  title:
+    label: Le méta title de la page
+    comment: "<title>XXX</title>"
+  hero:
+  hidden: true
 ---
 {% include '_logo.njk' %}
 {% include '_hero.njk' %}
