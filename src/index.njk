@@ -3,6 +3,12 @@ title: on sait pas encore
 description: on ne sait pas non plus
 layout: base.njk
 hero: Lorem ipsum
+buttonName: envoyer
+firstName: Prénom
+lastName: Nom
+email: * e-mail
+message: * message
+rgpd: J'autorise <span class="bimbo text-base">annmof</span> à m'envoyer des e-mails
 _inputs:
   layout:
     hidden: true
@@ -16,6 +22,20 @@ _inputs:
     hidden: true
   buttonName:
     label: Texte du bouton "envoyer" du formulaire
+  firstName:
+    label: texte pour le prénom
+  lastName:
+    label: texte pour le nom
+  email:
+    label: texte pour l'email
+  emailLabel:
+    hidden: true
+  message:
+    label: texte pour le message
+  messageLabel:
+    hidden: true
+  rgpd:
+    label: texte pour la case à cocher
 ---
 {% include '_logo.njk' %}
 {% include '_hero.njk' %}
