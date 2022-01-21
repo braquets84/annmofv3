@@ -72,7 +72,7 @@
     @apply bg-stone-100 dark:bg-gray-900;
   }
   .testimonial-button{
-    @apply mx-2 rounded-full border border-black dark:border-white h-2 w-2;
+    @apply mx-2 rounded-full h-2 w-2;
   }
 }
 
@@ -111,3 +111,37 @@ a[aria-current="page"]{
   box-decoration-break: clone;
   color:rgb(31 41 55);
 }
+
+.hello-shadow{
+  text-shadow: 1px -1px #555555, 2px -2px #555555, 3px -3px #555555, 4px -4px #555555, 5px -5px #555555, 6px -6px #555555, 7px -7px #555555, 8px -8px #555555;
+  transform: translateX(-8px) translateY(8px);
+}
+
+.heartbeat {
+	animation: poumpoum 1.5s ease-in-out infinite both;
+}
+
+@keyframes poumpoum {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in; 
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+

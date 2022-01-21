@@ -16,22 +16,29 @@
   {
     "title": "Création de site web",
     "imgurl": "assets/images/webdesign.png",
-    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
+    "texte": "Annmof réalise des sites internet entièrement sur-mesure, facilement modifiables et ultra performants. Responsive pour tous les appareils et parfaitement accessible à tous les internautes, votre site au design innovant offre une expérience utilisateur inoubliable.",
     "cta": "Découvrir nos offres \"Webdesign\"",
     "link": "/webdesign"
   },
   {
-    "title": "Formation",
+    "title": "Graphisme",
+    "imgurl": "assets/images/graphisme.png",
+    "texte": "Pour présenter une image professionnelle et élégante, travaillons ensemble l’image de votre marque à travers la construction d’une charte graphique et d’un logo et leur déploiement sur de tous les supports print et web.",
+    "cta": "Découvrir nos offres \"Graphisme\"",
+    "link": "/graphisme"
+  },
+  {
+    "title": "Formation Prof en Rédac",
     "imgurl": "assets/images/formation.png",
-    "texte": "Investir sur soi et se former plutôt que sous-traiter : mes coachings individuels s'adressent aux entrepreneurs indépendants de tout horizon (photographe, coiffeur, créateur de site web…) et la Masterclass, aux profs en reconversion professionnelle dans la rédaction web.",
+    "texte": "Prof en Rédac est une formation en Rédaction Web SEO pensée pour les professeurs en reconversion professionnelle dans la rédaction web. Composez votre parcours à partir d’une série de conférences et de workshops.",
     "cta": "Se former",
     "link": "/formation"
   },
   {
-    "title": "Graphisme",
-    "imgurl": "assets/images/graphisme.png",
-    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!",
-    "cta": "Découvrir nos offres \"Graphisme\"",
-    "link": "/graphisme"
+    "title": "Coaching",
+    "imgurl": "assets/images/formation.png",
+    "texte": "Investir sur soi et se former plutôt que sous-traiter : mes coachings individuels s'adressent aux entrepreneurs indépendants de tout horizon (photographe, coiffeur, créateur de site web…). Rédaction, SEO : à vous de composer votre programme.",
+    "cta": "Nous contacter",
+    "link": "/#contact"
   }
 ]
