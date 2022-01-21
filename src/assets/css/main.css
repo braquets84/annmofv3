@@ -6,12 +6,17 @@
   font-family: 'Bimbo', cursive;
 }
 
-.fraunces{
-  font-family: 'Fraunces', serif;
+.big-font{
+  font-weight: 900;
+}
+
+.medium-font{
+  font-weight: 500;
 }
 
 *{
-  font-family: 'Commissioner', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
 }
 
 .highlight-green {
@@ -20,17 +25,6 @@
     to right,
     rgba(134, 239, 172, 1),
     rgba(134, 239, 172, 0.5)
-  );
-  box-decoration-break: clone;
-  padding: 0.5rem;
-}
-
-.highlight-blue {
-  background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(125, 211, 252,1),
-    rgba(125, 211, 252, 0.5)
   );
   box-decoration-break: clone;
   padding: 0.5rem;
@@ -52,18 +46,11 @@
   .h-32rem{
     height:32rem;
   }
-
-  .service-img-container{
-    @apply flex justify-center md:justify-end -mt-8;
-  }
-  .service-img{
-    @apply w-20 h-20 object-cover rounded-full border-4 border-green-200;
-  }
   .service-h2{
     @apply text-gray-800 text-3xl font-semibold rounded -mt-2;
   }
   .service-card{
-    @apply max-w-md py-4 px-8 dark:bg-gray-700 nm-flat-gray-50 rounded-lg my-20;
+    @apply max-w-md py-4 px-8 dark:bg-gray-700 nm-flat-gray-50 rounded-lg my-20 flex flex-col justify-between;
   }
   .testimonial-button-active{
     @apply bg-gray-900 dark:bg-stone-100;
