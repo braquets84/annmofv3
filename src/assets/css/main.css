@@ -31,6 +31,15 @@
 }
 
 @layer components{
+  .inset-color-light{
+    background-color: #86EFAC;
+    color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.3);
+  }
+  .no-inset{
+    text-shadow: none;
+  }
   .nav-link{
     @apply py-2 px-2 font-semibold text-neutral-light dark:text-neutral-dark transition duration-300;
   }
@@ -46,20 +55,20 @@
   .h-32rem{
     height:32rem;
   }
+  .h-50rem{
+    height:50rem;
+  }
   .service-h2{
     @apply text-color dark:nm-flat-bg2-dark nm-flat-bg2-light text-3xl font-semibold rounded px-4 py-2 w-fit;
   }
   .service-card{
     @apply max-w-md py-4 px-8 dark:nm-flat-bg2-dark nm-flat-bg2-light rounded-lg my-20 flex flex-col justify-between;
   }
-  .testimonial-button-active{
-    @apply bg-gray-900 dark:bg-stone-100;
+  .play{
+    @apply nm-flat-bg2-light dark:nm-flat-bg2-dark;
   }
-  .testimonial-button-inactive{
-    @apply bg-stone-100 dark:bg-gray-900;
-  }
-  .testimonial-button{
-    @apply mx-2 rounded-full h-2 w-2;
+  .pause{
+    @apply nm-concave-bg2-light dark:nm-concave-bg2-dark;
   }
 }
 
@@ -142,20 +151,4 @@ a[aria-current="page"]{
 
 .emoji-vert{
   text-shadow: 0 0 0 rgb(134, 239, 172);
-}
-
-.shadow-green{
-  box-shadow:  10px 10px 15px #5ea778, -10px -10px 15px #aeffe0;
-}
-
-.inset-color-light{
-  background-color: #86EFAC;
-  color: transparent;
-  background-clip: text;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.3);
-}
-
-.inset-color-dark{
-  background-clip: text;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
 }
