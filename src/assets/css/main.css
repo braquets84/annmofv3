@@ -59,16 +59,16 @@
     height:50rem;
   }
   .service-h2{
-    @apply text-color dark:nm-flat-bg2-dark nm-flat-bg2-light text-3xl font-semibold rounded px-4 py-2 w-fit;
+    @apply text-color dark:nm-flat-bg1-dark nm-flat-bg1-light text-3xl font-semibold rounded px-4 py-2 w-fit;
   }
   .service-card{
-    @apply max-w-md py-4 px-8 dark:nm-flat-bg2-dark nm-flat-bg2-light rounded-lg my-20 flex flex-col justify-between;
+    @apply max-w-md py-4 px-8 dark:nm-flat-bg1-dark nm-flat-bg1-light rounded-lg my-20 flex flex-col justify-between;
   }
   .play{
-    @apply nm-flat-bg2-light dark:nm-flat-bg2-dark;
+    @apply nm-flat-bg1-light dark:nm-flat-bg1-dark;
   }
   .pause{
-    @apply nm-concave-bg2-light dark:nm-concave-bg2-dark;
+    @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
   }
 }
 
@@ -85,12 +85,12 @@
 
 .open-top{
   transform-origin: bottom;
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(7.5px) rotate(45deg);
 }
 
 .open-bot{
   transform-origin: top;
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 .open-mid{

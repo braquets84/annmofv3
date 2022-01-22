@@ -1,18 +1,18 @@
 <section id="contact">
-  <form class="nm-flat-bg2-light dark:nm-flat-bg2-dark mx-auto mx-8 mb-16 p-8 rounded-lg shadow-lg max-w-xl" name="contact" netlify>
-    <h2 class="rounded-md big-font nm-flat-bg2-light dark:nm-flat-bg2-dark-xs p-4 text-color text-4xl md:text-6xl text-center font-bold inset-color-light dark:no-inset mb-16">{{ formName }}</h2>
+  <form class="nm-flat-bg1-light dark:nm-flat-bg1-dark mx-8 lg:mx-auto mb-16 p-4 lg:p-8 rounded-lg shadow-lg max-w-xl" name="contact" netlify>
+    <h2 class="rounded-md big-font nm-flat-bg1-light dark:nm-flat-bg1-dark-xs p-4 text-color text-4xl md:text-6xl text-center font-bold inset-color-light dark:no-inset mb-16">{{ formName }}</h2>
     <div class="flex flex-wrap -mx-3 mb-6">
       <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
         <label class="block uppercase tracking-wide text-neutral-light dark:text-neutral-dark text-xs font-bold mb-2" for="grid-first-name">
           {{ firstName }}
         </label>
-        <input aria-required="false" class="appearance-none block w-full nm-inset-bg2-light-xs dark:nm-inset-bg2-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jade">
+        <input aria-required="false" class="appearance-none block w-full nm-inset-bg1-light-xs dark:nm-inset-bg1-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jade">
       </div>
       <div class="w-full md:w-1/2 px-3">
         <label class="block uppercase tracking-wide text-neutral-light dark:text-neutral-dark text-xs font-bold mb-2" for="grid-last-name">
           {{ lastName }}
         </label>
-        <input aria-required="false" class="appearance-none block w-full nm-inset-bg2-light-xs dark:nm-inset-bg2-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Martin">
+        <input aria-required="false" class="appearance-none block w-full nm-inset-bg1-light-xs dark:nm-inset-bg1-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Martin">
       </div>
     </div>
     <div class="flex flex-wrap -mx-3 mb-6">
@@ -20,7 +20,7 @@
         <label class="block uppercase tracking-wide text-neutral-light dark:text-neutral-dark text-xs font-bold mb-2" for="email">
           {{ email }}
         </label>
-        <input required aria-required="true" class="appearance-none block w-full nm-inset-bg2-light-xs dark:nm-inset-bg2-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="xyz@exemple.com" oninvalid="this.setCustomValidity('Vous devez saisir votre email')" oninput="this.setCustomValidity('')">
+        <input required aria-required="true" class="appearance-none block w-full nm-inset-bg1-light-xs dark:nm-inset-bg1-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="xyz@exemple.com" oninvalid="this.setCustomValidity('Vous devez saisir votre email')" oninput="this.setCustomValidity('')">
         <p class="text-gray-600 dark:text-stone-200 text-xs italic editable">{{ emailLabel }}</p>
       </div>
     </div>
@@ -29,12 +29,12 @@
         <label class="block uppercase tracking-wide text-neutral-light dark:text-neutral-dark text-xs font-bold mb-2" for="message">
           {{ message }}
         </label>
-        <textarea required aria-required="true" class="no-resize appearance-none block w-full nm-inset-bg2-light-xs dark:nm-inset-bg2-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" oninvalid="this.setCustomValidity('Vous devez saisir votre message')" oninput="this.setCustomValidity('')"></textarea>
+        <textarea required aria-required="true" class="no-resize appearance-none block w-full nm-inset-bg1-light-xs dark:nm-inset-bg1-dark-xs text-neutral-light dark:text-neutral-dark border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" oninvalid="this.setCustomValidity('Vous devez saisir votre message')" oninput="this.setCustomValidity('')"></textarea>
         <p class="text-gray-600 dark:text-stone-200 text-xs italic editable">{{ messageLabel }}</p>
       </div>
     </div>
     <div class="flex justify-center items-center gap-2 -mx-3 mb-6">
-      <label class="block uppercase tracking-wide text-neutral-light dark:text-neutral-dark text-xs font-bold mb-2" for="rgpd">
+      <label class="block uppercase tracking-wide text-neutral-light dark:text-neutral-dark text-xs font-bold mb-2 p-2" for="rgpd">
         * 
         <input class="bg-stone-100 text-neutral-light dark:text-neutral-dark border border-gray-200 rounded -pb-8 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" type="checkbox" id="rgpd" required oninvalid="this.setCustomValidity('Vous devez cocher cette case pour que nous puissions vous répondre')" oninput="this.setCustomValidity('')">
         J'autorise <span class="bimbo text-base">annmof</span> à m'envoyer des e-mails
