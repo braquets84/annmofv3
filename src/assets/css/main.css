@@ -149,11 +149,13 @@ a[aria-current="page"]{
 }
 
 .inset-color-light{
+  background-color: #86EFAC;
+  color: transparent;
   background-clip: text;
-  text-shadow: 0px 2px 2px rgb(0,0,0,0.9);
+  text-shadow: 4px 4px 1px rgba(255,255,255,0.3);
 }
 
 .inset-color-dark{
   background-clip: text;
-  text-shadow: 0px 2px 1px rgba(255,255,255,0.9);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
 }
