@@ -85,12 +85,12 @@
 
 .open-top{
   transform-origin: bottom;
-  transform: rotate(45deg) translateY(10px);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .open-bot{
   transform-origin: top;
-  transform: rotate(-45deg) translateY(-10px);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .open-mid{
