@@ -80,20 +80,20 @@
       </ul>
       <div class="flex flex-row gap-8">
         <div class="flex items-center md:pl-8">
-          <label for="darkModeToggle" class="flex items-center cursor-pointer">
+          <label for="darkModeToggle" class="flex flex-col gap-1 pt-2 justify-center items-center cursor-pointer">
             <div class="relative">
               <input type="checkbox" id="darkModeToggle" checked class="sr-only" onclick="enableDarkMode()">
               <div class="switch block nm-flat-bg1-light-lg dark:nm-flat-bg1-dark-lg w-10 h-6 rounded-full"></div>
               <div class="dot dark:translate-x-full absolute left-1 top-1 nm-inset-color w-4 h-4 rounded-full transition"></div>
             </div>
-            <div class="ml-3 text-neutral-light dark:text-neutral-dark text-xs text-center">
+            <div class="text-neutral-light dark:text-neutral-dark text-xs text-center">
               theme
             </div>
           </label>
         </div>
         <div class="lg:hidden flex items-center">
-          <button aria-expanded="false" class="outline-none mobile-menu-button text-sm text-neutral-light dark:text-neutral-dark text-center">
-            <div class="mb-1 flex flex-col items-center nm-flat-bg1-light dark:nm-flat-bg1-dark p-2 rounded-full">
+          <button aria-expanded="false" class="outline-none mobile-menu-button text-xs text-neutral-light dark:text-neutral-dark text-center">
+            <div class="flex flex-col items-center nm-flat-bg1-light dark:nm-flat-bg1-dark p-2 rounded-full">
               <span id="hamb-top" class="transition duration-300 mb-1 w-6 block h-1 bg-neutral-light dark:bg-neutral-dark rounded"></span>
               <span id="hamb-mid" class="transition duration-300 mb-1 w-6 block h-1 bg-neutral-light dark:bg-neutral-dark rounded"></span>
               <span id="hamb-bot" class="transition duration-300 w-6 block h-1 bg-neutral-light dark:bg-neutral-dark rounded"></span>
