@@ -143,3 +143,34 @@ a[aria-current="page"]{
 .emoji-vert{
   text-shadow: 0 0 0 rgb(134, 239, 172);
 }
+
+.freakout {
+	animation: vibrate 0.3s linear infinite both;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+  }
+}
