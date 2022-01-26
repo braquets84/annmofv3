@@ -195,7 +195,7 @@
 </nav>
       <main>
         <div class="mb-16 pt-16 max-height-100vh">
-  <p class="text-gray-800 dark:text-stone-100 bimbo mt-8 mb-8 text-center text-6xl md:text-8xl">annmof</p>
+  <p class="text-neutral-light dark:text-neutral-dark bimbo mt-8 mb-8 text-center text-6xl md:text-8xl">annmof</p>
   <img
     src="./assets/images/logo_annmof.webp"
     class="m-auto"
@@ -209,7 +209,7 @@
     <div class="rounded-md big-font nm-flat-bg1-light dark:nm-flat-bg1-dark-xs p-4 text-color text-4xl md:text-6xl text-center md:text-left font-bold mt-16"><h1 class="inset-color-light dark:no-inset editable">Agence web : rédaction web, SEO et formation</h1></div>
     <div class="mt-16 text-base leading-loose editable">
       <p class="bimbo text-8xl mb-4 text-center">Hello</p>
-      <p class="mb-4">Chaque jour, Annmof accompagne des chefs d'entreprises, commerçants, professions libérales, artisans et artistes, qui savent qu'un site web bien référencé est indispensable au développement de leur activité.</p>
+      <p class="mb-4">Chaque jour, <span class="bimbo text-lg font-bold">annmof</span> accompagne des chefs d'entreprises, commerçants, professions libérales, artisans et artistes, qui savent qu'un site web bien référencé est indispensable au développement de leur activité.</p>
       <div class="flex flex-col md:flex-row gap-8 drop-shadow-lg mb-4">
         <div class="nm-flat-bg1-light dark:nm-flat-bg1-dark rounded-md p-4 flex-1">
           <span class="big-font text-xl">93% </span>des internautes français utilisent Google comme moteur de recherche
@@ -288,9 +288,9 @@
     </div>
   
 </div>
+<div class="rounded-md big-font nm-flat-bg1-light dark:nm-flat-bg1-dark-xs p-4 text-color text-2xl md:text-4xl text-center mx-auto font-bold mt-16 pb-8 w-fit"><h2 class="editable">Qui se cache derrière <span class="mx-4 bimbo text-6xl font-bold">annmof</span>?</h2></div>
 <div class="flex flex-col md:flex-row items-center m-0 md:m-16 justify-around text-neutral-light dark:text-neutral-dark">
   <div class="order-2 md:order-1 m-8 md:max-width-50vw">
-    <div class="rounded-md big-font nm-flat-bg1-light dark:nm-flat-bg1-dark-xs p-4 text-color text-2xl md:text-4xl text-center md:text-left font-bold mt-16 pb-8 w-fit"><h2 class="editable">Qui se cache derrière <span class="mx-4 bimbo text-6xl font-bold">annmof</span>?</h2></div>
     <div class="mt-16 text-lg leading-loose editable">
       <p class="mb-4 italic">“Une agence web qui maîtrise le référencement et le marketing est un partenaire stratégique pour votre entreprise.”</p>
       <p class="mb-4">Créée en 2019, Annmof est une agence web avignonnaise qui a fait ses preuves. Au-delà de la création de contenus, vous venez de trouver un véritable partenaire en visibilité sur Internet.</p>
@@ -301,14 +301,102 @@
     </div>
   </div>
   <div class="flex flex-col lg:order-2">
-    <div class="m-8 nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl rounded-full">
-      <img
-        src="./assets/images/manon.webp"
-        class="object-scale-down m-auto rounded-full"
-        alt="visage de Manon Fayard qui regarde vers le haut en souriant"
-        width=265px
-        height=265px
+    <div class="m-8 nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl rounded-full w-60 h-60">
+      <figure>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -10 100 120"
+    class="image"
+    aria-hidden="true"
+  >
+    <title>This is an image title</title>
+    <desc>This is an image description</desc>
+    <defs>
+      <clipPath id="maskImage" clipPathUnits="userSpaceOnUse">
+        <path d="M100 63A50 50 0 110 70C0 42 20 0 48 0c27 0 52 42 52 70z" />
+      </clipPath>
+      <clipPath id="maskBackground" clipPathUnits="userSpaceOnUse">
+        <path
+          d="M190 101a50 50 0 01-50 50 50 50 0 01-50-50 50 50 0 0150-50 50 50 0 0150 50z"
+        />
+      </clipPath>
+    </defs>
+    <!-- Background image -->
+    <g clip-path="url(#maskImage)" transform="translate(0 -7)">
+      <image
+        clip-path="url(#maskBackground)"
+        width="120"
+        height="120"
+        x="70"
+        y="38"
+        href="https://res.cloudinary.com/dazdt97d3/image/upload/v1615813805/background.png"
+        transform="translate(-90 -31)"
       />
+      <!-- Foreground image -->
+      <image
+        width="120"
+        height="144"
+        x="-15"
+        y="0"
+        fill="none"
+        class="image__foreground"
+        href="https://res.cloudinary.com/dazdt97d3/image/upload/v1615813805/foreground.png"
+      />
+    </g>
+  </svg>
+
+  <!-- SEO and a11y fallback image -->
+
+  <img
+    src="https://res.cloudinary.com/dazdt97d3/image/upload/v1615813734/fallback.png"
+    alt="This is a detailed image description"
+    loading="lazy"
+    class="fallback-image"
+  />
+</figure>
+
+<style>
+  .image {
+    transform: scale(0.9, 0.9);
+    transition: transform 0.2s ease-in;
+  }
+
+  .image__foreground {
+    transform-origin: 50% 50%;
+    transform: translateY(4px) scale(1, 1);
+    transition: transform 0.2s ease-in;
+  }
+
+  .image:hover,
+  .image:active {
+    transform: scale(1, 1);
+  }
+
+  .image:hover .image__foreground,
+  .image:active .image__foreground {
+    transform: translateY(-7px) scale(1.05, 1.05);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .fallback-image {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    .image {
+      display: none;
+    }
+  }
+</style>
+
+      
     </div>
     <div class="m-8 nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl rounded-full">
       <img
