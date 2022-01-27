@@ -61,6 +61,9 @@
   .pause{
     @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
   }
+  .visage-anim:hover, .visage-anim:active{
+    @apply nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl transition-all duration-1000 ;
+  }
 }
 
 .nav-link:hover, .menu-item:hover{
