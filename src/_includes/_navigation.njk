@@ -16,7 +16,7 @@
       </div>
       <ul class="hidden lg:flex items-center">
         {% for item in services %}
-          <li>
+          <li class="text-center">
             <a href="{{ item.link }}" class="nav-link" {% if item.link in page.url %} aria-current="page"{% endif %}>
               {{ item.title }}
             </a>
