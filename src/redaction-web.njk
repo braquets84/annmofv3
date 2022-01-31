@@ -31,7 +31,7 @@ layout: base.njk
 
   <div class="flex flex-col md:flex-row flex-wrap items-center mt-8 md:w-full md:m-8 justify-center gap-8">
     {% for item in redacProducts %}
-    <div class="service-card h-40rem lg:h-28rem text-center flex flex-col justify-between">
+    <div class="service-card h-fit lg:h-28rem text-center flex flex-col justify-between">
       <div>
         <h3 class="service-h2 highlight-pink medium-font">{{ item.title }}</h3>
         <p class="mt-2 text-gray-600 dark:text-stone-200 p-4">{{ item.texte }}</p>
@@ -50,7 +50,7 @@ layout: base.njk
     <p class="my-8">Inscription prioritaire pour le <strong>personnel de l’Education Nationale</strong> et les professeurs en particulier.</p>
     <p class="my-8">Vous souhaitez vous former à la conception-rédaction web pour gérer vos propres contenus ou développer votre propre clientèle en tant que content manager ?</p>
   </div>
-  <div class="mx-auto w-fit">
-    <a href="../formation" class="border-2 border-color mb-16 text-center dark:nm-flat-bg1-dark nm-flat-bg1-light lg:text-3xl rounded-md px-4 py-2">Découvrez notre offre de formation</a>
+  <div class="mx-auto w-fit border-2 border-color mb-16 text-center dark:nm-flat-bg1-dark nm-flat-bg1-light lg:text-3xl rounded-md px-4 py-2">
+    <a href="../formation">Découvrez notre offre de formation</a>
   </div>
 </div>
