@@ -1,0 +1,47 @@
+---
+title: Prof en Rédac - Formation Rédaction Web - Workshops - annmof
+description: Formation Rédaction web - Conférences et Workshops à distance - Article de blog, Site vitrine, Landing page - Piloter un référencement local - Remboursée en 1 vente
+layout: base.njk
+---
+<div class="text-neutral-light dark:text-neutral-dark container p-4 mt-16 mx-auto text-lg leading-loose mb-16">
+
+  <div class="rounded-md big-font nm-flat-bg1-light dark:nm-flat-bg1-dark-xs p-4 text-color text-4xl md:text-6xl text-center w-fit font-bold mt-16 mx-auto"><h1 class="inset-color-light dark:no-inset editable">Formation en conception - rédaction web SEO</h1></div>
+
+  <p class="mx-auto my-8 italic">Série de conférences et de workshops à distance pour devenir un rédacteur web SEO rapidement opérationnel.</p>
+
+  <div class="mx-auto w-fit border-2 border-color mb-16 text-center dark:nm-flat-bg1-dark nm-flat-bg1-light lg:text-3xl rounded-md px-4 py-2">
+    <a href="#boutique">S'inscrire</a>
+  </div>
+
+  <h2 class="text-center mx-auto my-8 service-h2 big-font">Modalités générales de toutes les conférences et workshops : </h2>
+
+  <ul>
+    <li>100% en visioconférence</li>
+    <li>Aucun logiciel requis</li>
+    <li>Lien de connexion envoyé par mail</li>
+  </ul>
+
+  <p class="mx-auto my-8 italic">Conditions : être équipé d’une connexion Internet de qualité, d’un casque, d’un micro et d’une webcam</p>
+
+  <h2 class="text-center mx-auto my-8 service-h2 big-font">Prof en rédac, une formation en conception - rédaction web pensée pour les professeurs</h2>
+  <p class="mx-auto my-8">Marre de subir les pressions des parents, le mépris de la hiérarchie et les rabaissements constants de la part de toute la société ? Pourtant, tous ceux qui ont enseigné le savent : ce métier, autrefois si reconnu, demande un engagement énorme qui vous prend votre temps et votre argent personnel.</p>
+  <p class="mx-auto my-8">Pourtant, malgré les souffrances et la charge mentale, vous n’avez pas encore franchi le cap de cette décision difficile : quitter l’Education Nationale. Vous reconvertir. Vous hésitez. Peut-être venez-vous, comme moi, d’une famille de fonctionnaires. Du genre de celles où ne s’insuffle pas l’esprit de l’entrepreneuriat. La paperasse administrative, les déclarations URSSAF, la gestion budgétaire, la construction d’une offre, le développement de la clientèle : <strong>tout ça vous est inconnu et vous fait peur</strong>. Vous n’êtes pas sûr d’y arriver.</p>
+  <p class="mx-auto my-8">Comme vous, j’ai traversé cette phase de questionnement. Je me demandais s’il était possible de larguer les amarres, pour de bon, cette fois. Ne pas y revenir. <strong>Ne pas avoir besoin d’y revenir.</strong> Je ne le savais pas à l’époque, mais c’était déjà trop tard : la graine avait été plantée, l’idée commençait à germer. J’allais devenir rédactrice web et travailler à mon compte. Et c’est exactement ce que je vous propose de vivre : une transition rassurante vers votre nouveau métier.</p>
+  <p class="mx-auto my-8">Vous avez tout pour réussir dans l’aventure de l’entrepreneuriat en conception et rédaction web : vous êtes courageux, organisé, curieux, empathique, cultivé. Je ne vous dirais pas que c’est facile. Il faudra beaucoup travailler. Mais ça, vous le faites déjà. Par contre, je peux vous promettre que <strong>vous allez prendre beaucoup, beaucoup de plaisir</strong> dans cette nouvelle voie.</p>
+
+  <h2 class="text-center mx-auto my-8 service-h2 big-font">Prof en Rédac, le comment de cette formation en rédaction web courte et intensive</h2>
+  <div class="flex flex-col md:flex-row flex-wrap items-center mt-8 md:w-full md:m-8 justify-center gap-8">
+    {% for item in profEnRedac %}
+    <div class="service-card h-fit lg:h-20rem text-center flex flex-col justify-start">
+      <h3 class="service-h2 highlight-pink medium-font">{{ item.title }}</h3>
+      <p class="mt-2 text-gray-600 dark:text-stone-200 p-4">{{ item.texte }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div id="boutique"> 
+    <h2 class="text-center mx-auto my-8 service-h2 big-font">La boutique de la formation Prof en Rédac</h2>
+    <p class="mx-auto my-8">Inscrivez-vous en ligne depuis cette page à l’événement de votre choix. Vous pouvez <strong>prendre une place à la carte ou composer votre menu.</strong> Des tarifs dégressifs s’appliquent pour des achats multiples.</p>
+    <p class="mx-auto my-8">L’objectif de ces modules ? Vous donner des réponses concrètes sur le métier de rédacteur web et vous transmettre les savoir-faire indispensables pour faire grandir et vivre votre entreprise.</p>
+  </div>
+</div>

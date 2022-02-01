@@ -30,6 +30,11 @@
   padding: 0.5rem;
 }
 
+#boutique {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
 @layer components{
   .nav-link{
     @apply py-2 px-2 font-semibold text-neutral-light dark:text-neutral-dark transition duration-300;
@@ -48,6 +53,9 @@
   }
   .h-28rem{
     height:28rem;
+  }
+  .h-20rem{
+    height:20rem;
   }
   .h-40rem{
     height:40rem;
