@@ -30,9 +30,9 @@
   padding: 0.5rem;
 }
 
-#boutique {
-  padding-top: 50px;
-  margin-top: -50px;
+.container-ancre {
+  padding-top: 75px;
+  margin-top: -75px;
 }
 
 @layer components{

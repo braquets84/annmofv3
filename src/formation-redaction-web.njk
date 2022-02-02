@@ -39,9 +39,22 @@ layout: base.njk
     {% endfor %}
   </div>
 
-  <div id="boutique"> 
+  <div class="container-ancre" id="boutique"> 
     <h2 class="text-center mx-auto my-8 service-h2 big-font">La boutique de la formation Prof en Rédac</h2>
     <p class="mx-auto my-8">Inscrivez-vous en ligne depuis cette page à l’événement de votre choix. Vous pouvez <strong>prendre une place à la carte ou composer votre menu.</strong> Des tarifs dégressifs s’appliquent pour des achats multiples.</p>
     <p class="mx-auto my-8">L’objectif de ces modules ? Vous donner des réponses concrètes sur le métier de rédacteur web et vous transmettre les savoir-faire indispensables pour faire grandir et vivre votre entreprise.</p>
+
+    <h3 class="text-center mx-auto my-8 service-h2 big-font">Les lives (replay gratuit)</h3>
+    <p class="mx-auto my-8">Découverte du métier de rédacteur web :</p>
+    <div class="flex justify-center">
+      {% include 'lives-insta/_decouverteMetierRedacWeb.njk' %}
+    </div>
+    <p class="mx-auto my-8">Construire et fidéliser sa clientèle : </p>
+    <div class="flex justify-center">
+      {% include 'lives-insta/_construireFideliserClientele.njk' %}
+    </div>
+
+    <h3 class="text-center mx-auto my-8 service-h2 big-font">Conférences suivies d’un échange en direct</h3>
+
   </div>
 </div>
