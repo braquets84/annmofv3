@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --green-h: 142deg;
+  --green-s: 61%;
+  --green-l: 31%;
+  --shadow-green: 142deg 61% 31%;
+
+  --bg-h: 200deg;
+  --bg-s: 5%;
+  --bg-l: 56%;
+
+  --box-elevation-low:
+    5px 5px 5px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)-10%)),
+    -5px -5px 15px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%));
+  --box-elevation-medium:
+    10px 10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)-10%)),
+    -10px -10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%));
+  --box-elevation-high:
+    5px 5px 10px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)-10%)),
+    -5px -5px 10px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%)),
+    10px 10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l))),
+    -10px -10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%)),
+    15px 15px 30px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+10%)),
+    -15px -15px 30px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+100%));
+    
+  --text-elevation-low:
+    1px 1px 1px hsl(var(--shadow-green) / 0.62),
+    2px 2px 4px  hsl(var(--shadow-green) / 0.56);
+  --text-elevation-medium:
+    1px 1px 1px hsl(var(--shadow-green) / 0.62),
+    2px 2px 4px  hsl(var(--shadow-green) / 0.56),
+    4px 4px 8px  hsl(var(--shadow-green) / 0.5),
+    8px 8px 16px  hsl(var(--shadow-green) / 0.44);
+  --text-elevation-high:
+    1px 1px 1px hsl(var(--shadow-green) / 0.62),
+    2px 2px 4px  hsl(var(--shadow-green) / 0.56),
+    4px 4px 8px  hsl(var(--shadow-green) / 0.5),
+    8px 8px 16px  hsl(var(--shadow-green) / 0.44),
+    10px 10px 20px  hsl(var(--shadow-green) / 0.42),
+    15px 15px 30px  hsl(var(--shadow-green) / 0.4),
+    20px 20px 40px  hsl(var(--shadow-green) / 0.38);
+}
+
 .bimbo{
   font-family: 'Bimbo', cursive;
 }
@@ -64,19 +106,37 @@
     height:50rem;
   }
   .service-h2{
-    @apply text-color nm-inset-bg1-light-xs dark:nm-inset-bg1-dark text-3xl font-semibold rounded px-4 py-2 w-fit;
+    @apply text-color text-3xl font-semibold rounded-md px-4 py-2 w-fit;
   }
   .service-card{
-    @apply max-w-md py-4 px-8 dark:nm-flat-bg1-dark nm-flat-bg1-light rounded-lg my-20 flex flex-col justify-between;
+    @apply max-w-md py-4 px-8 neu-medium rounded-2xl my-20 flex flex-col justify-between;
   }
   .play{
-    @apply nm-flat-bg1-light dark:nm-flat-bg1-dark;
+    @apply neu-low;
   }
   .pause{
     @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
   }
   .visage-anim:hover, .visage-anim:active{
     @apply nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl transition-all duration-1000 ;
+  }
+  .textshadow-medium{
+    text-shadow: var(--text-elevation-medium);
+  }
+  .textshadow-low{
+    text-shadow: var(--text-elevation-low);
+  }
+  .textshadow-high{
+    text-shadow: var(--text-elevation-high);
+  }
+  .neu-high{
+    box-shadow: var(--box-elevation-high);
+  }
+  .neu-medium{
+    box-shadow: var(--box-elevation-medium);
+  }
+  .neu-low{
+    box-shadow: var(--box-elevation-low);
   }
 }
 
@@ -144,17 +204,21 @@ a[aria-current="page"]{
   }
 }
 
-@keyframes rotate-90-cw {
+@keyframes rotate-center {
   0% {
     transform: rotate(0);
   }
-  100% {
+  50% {
     transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-.rotate-90-cw {
-	animation: rotate-90-cw 2.5s ease-in-out alternate both infinite;
+
+.rotate-center {
+	animation: rotate-center 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .emoji-vert{
