@@ -2,10 +2,10 @@
   {% for item in services %}
     <div class="service-card pt-8">
       <div>
-        <h2 class="service-h2 big-font textshadow-low">{{ item.title }}</h2>
-        <p class="mt-2 text-neutral-light dark:text-neutral-dark dark:text-stone-100 p-4 leading-relaxed">{{ item.texte }}</p>
+        <h2 class="service-h2 big-font textshadow">{{ item.title }}</h2>
+        <p class="mt-2 text-neutral-light dark:text-neutral-dark p-4 leading-relaxed">{{ item.texte }}</p>
       </div>
-      <div class="border border-color mt-4 neu-low w-fit rounded-lg px-4 py-2 self-end">
+      <div class="border border-color mt-4 neu-light-low dark:neu-dark-low w-fit rounded-lg px-4 py-2 self-end">
         <a href={{ item.link }} class="text-base lg:text-xl text-neutral-light dark:text-neutral-dark">{{ item.cta }}</a>
       </div>
     </div>
