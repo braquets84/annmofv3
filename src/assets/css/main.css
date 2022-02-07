@@ -71,7 +71,7 @@
 }
 
 @layer base{
-  *{
+  #wrapper{
     @apply text-neutral-light dark:text-neutral-dark bg-bg1-light dark:bg-bg1-dark;
   }
 }
@@ -100,12 +100,6 @@
   }
   .service-card{
     @apply max-w-md py-4 px-8 neu-medium rounded-2xl my-20 flex flex-col justify-between;
-  }
-  .visage-anim:hover, .visage-anim:active{
-    @apply neu-high transition-all duration-1000 ;
-  }
-  .text-col{
-    @apply text-neutral-light dark:text-neutral-dark;
   }
   .textshadow{
     text-shadow: var(--text-elevation);
