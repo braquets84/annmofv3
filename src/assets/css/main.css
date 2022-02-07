@@ -48,6 +48,11 @@
     2px 2px 4px  hsl(var(--green-h),var(--green-s),calc(var(--green-l)-30%));
 }
 
+*{
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 300;
+}
+
 .bimbo{
   font-family: 'Bimbo', cursive;
 }
@@ -60,34 +65,18 @@
   font-weight: 500;
 }
 
-*{
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: 300;
-}
-
-.highlight-green {
-  background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(134, 239, 172, 1),
-    rgba(134, 239, 172, 0.5)
-  );
-  box-decoration-break: clone;
-  padding: 0.5rem;
-}
-
 .container-ancre {
   padding-top: 75px;
   margin-top: -75px;
 }
 
+@layer base{
+  *{
+    @apply text-neutral-light dark:text-neutral-dark bg-bg1-light dark:bg-bg1-dark;
+  }
+}
+
 @layer components{
-  .nav-link{
-    @apply py-2 px-2 font-semibold text-neutral-light dark:text-neutral-dark transition duration-300;
-  }
-  .menu-item{
-    @apply block text-lg px-2 py-4 text-neutral-light dark:text-neutral-dark transition duration-300;
-  }
   .max-width-50vw{
     max-width: 50vw;
   }
@@ -109,20 +98,14 @@
   .h-50rem{
     height:50rem;
   }
-  .service-h2{
-    @apply text-color text-3xl font-semibold rounded-md px-4 py-2 w-fit;
-  }
   .service-card{
-    @apply max-w-md py-4 px-8 neu-light-medium dark:neu-dark-medium rounded-2xl my-20 flex flex-col justify-between;
-  }
-  .play{
-    @apply neu-light-low dark:neu-dark-low;
-  }
-  .pause{
-    @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
+    @apply max-w-md py-4 px-8 neu-medium rounded-2xl my-20 flex flex-col justify-between;
   }
   .visage-anim:hover, .visage-anim:active{
-    @apply nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl transition-all duration-1000 ;
+    @apply neu-high transition-all duration-1000 ;
+  }
+  .text-col{
+    @apply text-neutral-light dark:text-neutral-dark;
   }
   .textshadow{
     text-shadow: var(--text-elevation);
@@ -144,6 +127,21 @@
   }
   .neu-dark-low{
     box-shadow: var(--box-dark-low);
+  }
+  .neu-low{
+    @apply neu-light-low dark:neu-dark-low;
+  }
+  .neu-medium{
+    @apply neu-light-medium dark:neu-dark-medium;
+  }
+  .neu-high{
+    @apply neu-light-high dark:neu-dark-high;
+  }
+  .play{
+    @apply neu-high;
+  }
+  .pause{
+    @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
   }
 }
 
