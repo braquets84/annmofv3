@@ -15,6 +15,34 @@
   --bg-dark-s: 28%;
   --bg-dark-l: 17%;
 
+  --inset-light-low:
+    inset 5px 5px 5px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
+    inset -5px -5px 15px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
+  --inset-light-medium:
+    inset 10px 10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
+    inset -10px -10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
+  --inset-light-high:
+    inset 5px 5px 10px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
+    inset -5px -5px 10px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%)),
+    inset 10px 10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l))),
+    inset -10px -10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%)),
+    inset 15px 15px 30px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+10%)),
+    inset -15px -15px 30px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+100%));
+
+  --inset-dark-low:
+    inset 5px 5px 5px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    inset -5px -5px 15px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+5%));
+  --inset-dark-medium:
+    inset 10px 10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    inset -10px -10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+10%));
+  --inset-dark-high:
+    inset 5px 5px 10px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    inset -5px -5px 10px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+5%)),
+    inset 10px 10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l))),
+    inset -10px -10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+10%)),
+    inset 15px 15px 30px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    inset -15px -15px 30px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+2%));
+
   --box-light-low:
     5px 5px 5px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
     -5px -5px 15px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
@@ -122,6 +150,24 @@
   .neu-dark-low{
     box-shadow: var(--box-dark-low);
   }
+  .inset-light-high{
+    box-shadow: var(--inset-light-high);
+  }
+  .inset-light-medium{
+    box-shadow: var(--inset-light-medium);
+  }
+  .inset-light-low{
+    box-shadow: var(--inset-light-low);
+  }
+  .inset-dark-high{
+    box-shadow: var(--inset-dark-high);
+  }
+  .inset-dark-medium{
+    box-shadow: var(--inset-dark-medium);
+  }
+  .inset-dark-low{
+    box-shadow: var(--inset-dark-low);
+  }
   .neu-low{
     @apply neu-light-low dark:neu-dark-low;
   }
@@ -131,11 +177,20 @@
   .neu-high{
     @apply neu-light-high dark:neu-dark-high;
   }
+  .inset-low{
+    @apply inset-light-low dark:inset-dark-low;
+  }
+  .inset-medium{
+    @apply inset-light-medium dark:inset-dark-medium;
+  }
+  .inset-high{
+    @apply inset-light-high dark:inset-dark-high;
+  }
   .play{
-    @apply neu-high;
+    @apply neu-high hover:neu-low;
   }
   .pause{
-    @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
+    @apply inset-high hover:inset-low;
   }
 }
 
@@ -201,23 +256,6 @@ a[aria-current="page"]{
     transform: scale(1);
     animation-timing-function: ease-out;
   }
-}
-
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-.rotate-center {
-	animation: rotate-center 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .emoji-vert{
