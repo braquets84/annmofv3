@@ -6,42 +6,46 @@
   --green-h: 142deg;
   --green-s: 61%;
   --green-l: 31%;
-  --shadow-green: 142deg 61% 31%;
 
-  --bg-h: 200deg;
-  --bg-s: 5%;
-  --bg-l: 56%;
+  --bg-light-h: 220deg;
+  --bg-light-s: 13%;
+  --bg-light-l: 91%;
 
-  --box-elevation-low:
-    5px 5px 5px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)-10%)),
-    -5px -5px 15px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%));
-  --box-elevation-medium:
-    10px 10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)-10%)),
-    -10px -10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%));
-  --box-elevation-high:
-    5px 5px 10px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)-10%)),
-    -5px -5px 10px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%)),
-    10px 10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l))),
-    -10px -10px 20px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+70%)),
-    15px 15px 30px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+10%)),
-    -15px -15px 30px hsl(var(--bg-h),var(--bg-s),calc(var(--bg-l)+100%));
+  --bg-dark-h: 215deg;
+  --bg-dark-s: 28%;
+  --bg-dark-l: 17%;
+
+  --box-light-low:
+    5px 5px 5px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
+    -5px -5px 15px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
+  --box-light-medium:
+    10px 10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
+    -10px -10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
+  --box-light-high:
+    5px 5px 10px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
+    -5px -5px 10px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%)),
+    10px 10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l))),
+    -10px -10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%)),
+    15px 15px 30px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+10%)),
+    -15px -15px 30px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+100%));
+
+  --box-dark-low:
+    5px 5px 5px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    -5px -5px 15px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+5%));
+  --box-dark-medium:
+    10px 10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    -10px -10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+10%));
+  --box-dark-high:
+    5px 5px 10px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    -5px -5px 10px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+5%)),
+    10px 10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l))),
+    -10px -10px 20px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+10%)),
+    15px 15px 30px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)-10%)),
+    -15px -15px 30px hsl(var(--bg-dark-h),var(--bg-dark-s),calc(var(--bg-dark-l)+2%));
     
-  --text-elevation-low:
-    1px 1px 1px hsl(var(--shadow-green) / 0.62),
-    2px 2px 4px  hsl(var(--shadow-green) / 0.56);
-  --text-elevation-medium:
-    1px 1px 1px hsl(var(--shadow-green) / 0.62),
-    2px 2px 4px  hsl(var(--shadow-green) / 0.56),
-    4px 4px 8px  hsl(var(--shadow-green) / 0.5),
-    8px 8px 16px  hsl(var(--shadow-green) / 0.44);
-  --text-elevation-high:
-    1px 1px 1px hsl(var(--shadow-green) / 0.62),
-    2px 2px 4px  hsl(var(--shadow-green) / 0.56),
-    4px 4px 8px  hsl(var(--shadow-green) / 0.5),
-    8px 8px 16px  hsl(var(--shadow-green) / 0.44),
-    10px 10px 20px  hsl(var(--shadow-green) / 0.42),
-    15px 15px 30px  hsl(var(--shadow-green) / 0.4),
-    20px 20px 40px  hsl(var(--shadow-green) / 0.38);
+  --text-elevation:
+    1px 1px 1px hsl(var(--green-h),var(--green-s),calc(var(--green-l)-10%)),
+    2px 2px 4px  hsl(var(--green-h),var(--green-s),calc(var(--green-l)-30%));
 }
 
 .bimbo{
@@ -109,10 +113,10 @@
     @apply text-color text-3xl font-semibold rounded-md px-4 py-2 w-fit;
   }
   .service-card{
-    @apply max-w-md py-4 px-8 neu-medium rounded-2xl my-20 flex flex-col justify-between;
+    @apply max-w-md py-4 px-8 neu-light-medium dark:neu-dark-medium rounded-2xl my-20 flex flex-col justify-between;
   }
   .play{
-    @apply neu-low;
+    @apply neu-light-low dark:neu-dark-low;
   }
   .pause{
     @apply nm-concave-bg1-light dark:nm-concave-bg1-dark;
@@ -120,23 +124,26 @@
   .visage-anim:hover, .visage-anim:active{
     @apply nm-flat-bg1-light-xl dark:nm-flat-bg1-dark-xl transition-all duration-1000 ;
   }
-  .textshadow-medium{
-    text-shadow: var(--text-elevation-medium);
+  .textshadow{
+    text-shadow: var(--text-elevation);
   }
-  .textshadow-low{
-    text-shadow: var(--text-elevation-low);
+  .neu-light-high{
+    box-shadow: var(--box-light-high);
   }
-  .textshadow-high{
-    text-shadow: var(--text-elevation-high);
+  .neu-light-medium{
+    box-shadow: var(--box-light-medium);
   }
-  .neu-high{
-    box-shadow: var(--box-elevation-high);
+  .neu-light-low{
+    box-shadow: var(--box-light-low);
   }
-  .neu-medium{
-    box-shadow: var(--box-elevation-medium);
+  .neu-dark-high{
+    box-shadow: var(--box-dark-high);
   }
-  .neu-low{
-    box-shadow: var(--box-elevation-low);
+  .neu-dark-medium{
+    box-shadow: var(--box-dark-medium);
+  }
+  .neu-dark-low{
+    box-shadow: var(--box-dark-low);
   }
 }
 
