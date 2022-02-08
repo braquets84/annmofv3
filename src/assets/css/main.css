@@ -16,8 +16,8 @@
   --bg-dark-l: 17%;
 
   --inset-light-low:
-    inset 5px 5px 5px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
-    inset -5px -5px 15px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
+    inset 5px 5px 5px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-20%)),
+    inset -5px -5px 15px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+20%));
   --inset-light-medium:
     inset 10px 10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)-10%)),
     inset -10px -10px 20px hsl(var(--bg-light-h),var(--bg-light-s),calc(var(--bg-light-l)+70%));
