@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link href="../assets/css/main.css" rel="stylesheet" />
+    <link href="../assets/css/liteYT.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;900&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;900&display=swap" />
+    </noscript>
+    <style>
+      @font-face {   
+        font-family: "Bimbo";   
+        src: url(/assets/fonts/Bimbo.woff2) format('woff2');
+        font-display:swap;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <div id="wrapper" class="-mt-8">
+      {% include '_navigation.njk' %}
+      <main>
+        {{ content | safe }}
+      </main>
+      {% include '_footer.njk'%}
+    </div>
+  </body>
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  </script>
+  <script async src="../assets/js/liteYT.js"></script>
+</html>

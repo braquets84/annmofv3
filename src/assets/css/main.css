@@ -194,17 +194,6 @@
   }
 }
 
-.nav-link:hover, .menu-item:hover{
-  background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(134, 239, 172, 1),
-    rgba(134, 239, 172, 0.3)
-  );
-  box-decoration-break: clone;
-  color:rgb(31 41 55);
-}
-
 .open-top{
   transform-origin: bottom;
   transform: translateY(7.5px) rotate(45deg);
@@ -220,14 +209,7 @@
 }
 
 a[aria-current="page"]{
-  background: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(134, 239, 172, 1),
-    rgba(134, 239, 172, 0.3)
-  );
-  box-decoration-break: clone;
-  color:rgb(31 41 55);
+  background-color: #4ADE80;
 }
 
 .heartbeat {
@@ -259,32 +241,7 @@ a[aria-current="page"]{
 }
 
 .emoji-vert{
-  text-shadow: 0 0 0 rgb(134, 239, 172);
-}
-
-.freakout {
-	animation: vibrate 0.3s linear infinite both;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
+  text-shadow: 0 0 0 hsl(var(--green-h),var(--green-s),var(--green-l));
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -292,3 +249,4 @@ a[aria-current="page"]{
     animation: none;
   }
 }
+

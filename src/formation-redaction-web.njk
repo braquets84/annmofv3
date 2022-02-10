@@ -1,15 +1,15 @@
 ---
 title: Prof en Rédac - Formation Rédaction Web - Workshops - annmof
 description: Formation Rédaction web - Conférences et Workshops à distance - Article de blog, Site vitrine, Landing page - Piloter un référencement local - Remboursée en 1 vente
-layout: base.njk
+layout: youtube.njk
 ---
 <div class=" container p-4 mt-16 mx-auto text-lg leading-loose mb-16">
 
-  <div class="rounded-md big-font nm-flat-bg1-light dark:nm-flat-bg1-dark-xs p-4 text-color text-4xl md:text-6xl text-center w-fit font-bold mt-16 mx-auto"><h1 class="inset-color-light dark:no-inset editable">Formation en conception - rédaction web SEO</h1></div>
+  <div class="rounded-md big-font neu-high textshadow p-4 text-color text-4xl md:text-6xl text-center w-fit font-bold mt-16 mx-auto"><h1 class="inset-color-light dark:no-inset editable">Formation en conception - rédaction web SEO</h1></div>
 
   <p class="mx-auto my-8 italic">Série de conférences et de workshops à distance pour devenir un rédacteur web SEO rapidement opérationnel.</p>
 
-  <div class="mx-auto w-fit border-2 border-color mb-16 text-center dark:nm-flat-bg1-dark nm-flat-bg1-light lg:text-3xl rounded-md px-4 py-2">
+  <div class="mx-auto w-fit border-2 border-color mb-16 text-center neu-medium hover:inset-low lg:text-3xl rounded-md px-4 py-2">
     <a href="#boutique">S'inscrire</a>
   </div>
 
@@ -33,7 +33,7 @@ layout: base.njk
   <div class="flex flex-col md:flex-row flex-wrap items-center mt-8 md:w-full md:m-8 justify-center gap-8">
     {% for item in profEnRedac %}
     <div class="service-card h-fit lg:h-20rem text-center flex flex-col justify-start">
-      <h3 class="text-color text-3xl font-semibold rounded-md px-4 py-2 w-fit highlight-pink medium-font">{{ item.title }}</h3>
+      <h3 class="text-color textshadow text-3xl font-semibold rounded-md px-4 py-2 w-fit highlight-pink medium-font">{{ item.title }}</h3>
       <p class="mt-2 text-gray-600 dark:text-stone-200 p-4">{{ item.texte }}</p>
     </div>
     {% endfor %}
@@ -46,10 +46,17 @@ layout: base.njk
 
     <h3 class="text-center mx-auto my-8 text-color text-3xl font-semibold rounded-md px-4 py-2 w-fit big-font">Les lives (replay gratuit)</h3>
     <p class="mx-auto my-8">Découverte du métier de rédacteur web :</p>
-    {% include 'lives-insta/_decouverteMetierRedacWeb.njk' %}
+    <lite-youtube videoid="OWutEle67MU" style="background-image: url('https://i.ytimg.com/vi/OWutEle67MU/hqdefault.jpg');">
+      <a href="https://youtube.com/watch?v=OWutEle67MU" class="lty-playbtn" title="Play Video">
+        <span class="lyt-visually-hidden">Play Video: Découverte du métier de rédacteur web</span>
+      </a>
+    </lite-youtube>
     <p class="mx-auto my-8">Construire et fidéliser sa clientèle : </p>
-    
-
+    <lite-youtube videoid="QAuLI6BtF4E" style="background-image: url('https://i.ytimg.com/vi/QAuLI6BtF4E/hqdefault.jpg');">
+      <a href="https://youtube.com/watch?v=QAuLI6BtF4E" class="lty-playbtn" title="Play Video">
+        <span class="lyt-visually-hidden">Play Video: Découverte du métier de rédacteur web</span>
+      </a>
+    </lite-youtube>
     <h3 class="text-center mx-auto my-8 text-color text-3xl font-semibold rounded-md px-4 py-2 w-fit big-font">Conférences suivies d’un échange en direct</h3>
 
   </div>
