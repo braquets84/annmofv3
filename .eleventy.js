@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/*.ico");
   eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
 
-  config.addFilter('date', function (date, dateFormat) {
+  eleventyConfig.addFilter('date', function (date, dateFormat) {
     return format(date, dateFormat)
   })
 
