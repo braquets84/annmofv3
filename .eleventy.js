@@ -1,9 +1,15 @@
+const format = require('date-fns/format');
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/images");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/assets/js");
   eleventyConfig.addPassthroughCopy("./src/*.ico");
   eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
+
+  config.addFilter('date', function (date, dateFormat) {
+    return format(date, dateFormat)
+  })
 
   return {
     dir: {
